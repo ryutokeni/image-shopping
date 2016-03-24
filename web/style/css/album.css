@@ -1,0 +1,169 @@
+.addAlbum{
+    position: relative;
+    float: left;
+    min-width: 150px;
+    min-height: 150px;
+    width: 20%;
+    height: 40%;
+    margin-top: 15px;
+    margin-left: 2.5%;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+.addAlbum:after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.addAlbum img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.addAlbumMask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    background-color: whitesmoke;
+    z-index: 999;
+    border-radius: 20px;
+}
+.addAlbumMask:hover{
+    opacity: 0.4;
+}
+.albumMask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    background-color: black;
+    z-index: 999;
+    border-radius: 20px;
+}
+.albumMask:hover{
+    opacity: 0.2;
+}
+.albumCover{
+    position: relative;
+    float: left;
+    min-width: 150px;
+    min-height: 150px;
+    width: 20%;
+    height: 40%;
+    margin-top: 15px;
+    margin-left: 2.5%;
+    text-align: center;
+    background-color: gray;
+    border-radius: 20px;
+}
+.albumCover:after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.albumCover img{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    color: white;
+    overflow: hidden;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    -webkit-animation: showMe 5s linear infinite 0s forwards;
+    -moz-animation: showMe 5s linear infinite 0s forwards;
+    -o-animation: showMe 5s linear infinite 0s forwards;
+    -ms-animation: showMe 5s linear infinite 0s forwards;
+    animation: showMe 5s linear infinite 0s forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+    animation-play-state: paused;	
+    border-radius: 20px;
+}
+.albumCover img:nth-child(1){
+    z-index: 6;
+}
+.albumCover img:nth-child(2){
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    animation-delay: 1s;
+    z-index: 5;
+}
+.albumCover img:nth-child(3){
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    animation-delay: 2s;
+    z-index: 4;
+}
+.albumCover img:nth-child(4){
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    animation-delay: 3s;
+    z-index: 3;
+}
+.albumCover img:nth-child(5){
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    -ms-animation-delay: 4s;
+    animation-delay: 4s;
+    z-index: 2;
+}
+.albumCover:hover img{
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -o-animation-play-state: running;
+    -ms-animation-play-state: running;
+    animation-play-state: running;
+}
+@-webkit-keyframes showMe {
+    0% { visibility: visible; z-index: 100; }
+    12.5% { visibility: visible; z-index: 100; }
+    25% { visibility: hidden; z-index: 0; }
+    100% { visibility: hidden; z-index: 0; }
+}
+
+@-moz-keyframes showMe {
+    0% { visibility: visible; z-index: 100; }
+    12.5% { visibility: visible; z-index: 100; }
+    25% { visibility: hidden; z-index: 0; }
+    100% { visibility: hidden; z-index: 0; }
+}
+
+@-o-keyframes showMe {
+    0% { visibility: visible; z-index: 100; }
+    12.5% { visibility: visible; z-index: 100; }
+    25% { visibility: hidden; z-index: 0; }
+    100% { visibility: hidden; z-index: 0; }
+}
+
+@-ms-keyframes showMe {
+    0% { visibility: visible; z-index: 100; }
+    12.5% { visibility: visible; z-index: 100; }
+    25% { visibility: hidden; z-index: 0; }
+    100% { visibility: hidden; z-index: 0; }
+}
+
+@keyframes showMe {
+    0% { visibility: visible; z-index: 100; }
+    12.5% { visibility: visible; z-index: 100; }
+    25% { visibility: hidden; z-index: 0; }
+    100% { visibility: hidden; z-index: 0; }
+}
+
+
